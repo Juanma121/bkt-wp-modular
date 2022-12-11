@@ -1,0 +1,49 @@
+{
+  "name": "brooktec",
+  "version": "1.0.0",
+  "description": "Brooktec Modular WP Theme",
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "node_modules/.bin/gulp build:watch",
+    "build": "node_modules/.bin/gulp build",
+    "watch": "node_modules/.bin/gulp watch",
+    "clean": "node_modules/.bin/gulp clean",
+    "upload": "node_modules/.bin/gulp upload:pre",
+    "deploy": "node_modules/.bin/gulp upload:pro",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brooktec",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "devDependencies": {
+    "browser-sync": "2.27",
+    "dotenv": "^16.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-terser": "^2.1.0",
+    "jshint": "^2.11.0",
+    "sass": "^1.54.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "bootstrap": "^5.2.0"
+  }
+}
