@@ -4,3 +4,4 @@ wp-content/uploads/
 wp-content/upgrade/
 wp-content/plugins/hello.php
 node_modules
+wp-cli.phar
