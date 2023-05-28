@@ -4,6 +4,8 @@ $required_files = [
     'inc/config/definitions.php',
     'inc/config/theme-config.php',
     'inc/helpers/loader.php',
+    'inc/acf/functions.php',
+    'inc/acf/init.php',
 ];
 
 foreach($required_files as $required_file) {

@@ -1,11 +1,13 @@
 <?php
 
+require_once(__DIR__ . '/styles-definitions.php');
+
 function tpl_load_modules($modules_names = array()) {
     $modules_dir = __DIR__;
     $mods = array();
     foreach ($modules_names as $module_name) {
-        $module_definition = "{$modules_dir}/{$module_name}/definition.php";
-        $module_functions = "{$module_dir}/{$module_name}/functions.php";
+        $module_definition = "$modules_dir/$module_name/definition.php";
+        $module_functions = "$modules_dir/$module_name/functions.php";
         if(file_exists($module_definition) && file_exists($module_functions)) {
             $fields = require($module_definition);
             require_once($module_functions);
