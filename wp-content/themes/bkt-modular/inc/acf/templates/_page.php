@@ -1,10 +1,16 @@
 <?php
+
+$template_modules = array (
+    'module_banner',
+    'module_timeline'
+);
+
 if( function_exists('acf_add_local_field_group') ):
     $module_name = 'acf_page';
-    $group_[$module_name] = "bkt_{$module_name}_" . md5( $module_name );
+    $group_{$module_name} = "bkt_{$module_name}_" . md5( $module_name );
 
     acf_add_local_field_group(array(
-        'key' => $group_[$module_name],
+        'key' => $group_{$module_name},
         'title' => __('Módulos', BKT_MODULAR_THEME_LANG_DOMINE),
         'fields' => array(
             array(
@@ -20,11 +26,7 @@ if( function_exists('acf_add_local_field_group') ):
                     'class' => '',
                     'id' => '',
                 ),
-                'layouts' => tpl_load_modules(
-                    array(
-                        'module_banner'
-                    )
-                ),
+                'layouts' => tpl_load_modules( $template_modules ),
                 'button_label' => __('Agregar bloque', BKT_MODULAR_THEME_LANG_DOMINE),
                 'min' => '',
                 'max' => '',
@@ -50,4 +52,3 @@ if( function_exists('acf_add_local_field_group') ):
     ));
 
 endif;
-
