@@ -1,0 +1,153 @@
+%text-btn {
+  font-size: $text-m;
+  line-height: 1;
+}
+
+%text-btn-small {
+  font-size: $text-s;
+  font-weight: bold;
+  line-height: 1;
+}
+
+%btn-base {
+  @extend %text-btn-small;
+  border-color: $transparent;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  min-width: 165px;
+  overflow: hidden;
+  padding: 1.2rem 2.4rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .3s;
+
+  &:hover {
+    text-decoration: none;
+    transition: background-color .3s ease;
+  }
+
+  &[disabled],
+  &.disabled {
+    box-shadow: none !important; //sass-lint:disable-line no-important
+    pointer-events: none;
+  }
+
+  &.small {
+    min-width: auto;
+    padding: 1.2rem;
+  }
+
+  &.medium {
+    min-width: 200px;
+    padding: 1.2rem 2.4rem;
+  }
+
+  &.big {
+    min-width: 250px;
+    padding: 1.2rem 2.4rem;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.btn-rounded {
+    border-radius: 2.4rem;
+  }
+}
+
+%btn-disabled {
+  background-color: $gray;
+  border-color: $gray;
+  color: $white;
+}
+
+%btn-primary {
+  @extend %btn-base;
+  background-color: $black;
+  border-color: $black;
+  color: $white;
+
+  &:active,
+  &:hover {
+    background-color: $white;
+    border-color: $black;
+    color: $black;
+  }
+
+  &[disabled],
+  &.disabled {
+    @extend %btn-disabled;
+  }
+}
+
+%btn-solid {
+  @extend %btn-base;
+  background-color: $black;
+  border-color: $black;
+  color: $white;
+
+  &:active,
+  &:hover {
+    background-color: $white;
+    border-color: $white;
+    color: $black;
+  }
+
+  &[disabled],
+  &.disabled {
+    @extend %btn-disabled;
+  }
+}
+
+%btn-border {
+  @extend %btn-base;
+  background-color: $white;
+  border-color: $black;
+  color: $black;
+
+  &:active,
+  &:hover {
+    background-color: $black;
+    border-color: $white;
+    color: $white;
+  }
+
+  &[disabled],
+  &.disabled {
+    @extend %btn-disabled;
+  }
+}
+
+%btn-link {
+  @extend %btn-base;
+  border-radius: 0;
+  color: $black;
+  padding-left: 0;
+  text-align: left;
+
+  &[disabled],
+  &.disabled {
+    @extend %btn-disabled;
+  }
+
+  &:hover {
+    color: $gray;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.btn-primary {
+  @extend %btn-solid;
+}
+
+.btn-secondary {
+  @extend %btn-border;
+}
+
+.btn-link {
+  @extend %btn-link;
+}
