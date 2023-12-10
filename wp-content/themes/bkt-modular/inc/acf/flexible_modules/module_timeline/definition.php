@@ -184,7 +184,7 @@ return array(
                     ),
                 ),
             ),
-            styles_options(array('container','top','bottom','color')),
+            styles_options($module_name, array('container','top','bottom','color')),
         ),
         'min' => '',
         'max' => '',

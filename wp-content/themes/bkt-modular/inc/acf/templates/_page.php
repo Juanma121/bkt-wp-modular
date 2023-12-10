@@ -1,6 +1,7 @@
 <?php
 
 $template_modules = array (
+    'module_text',
     'module_banner',
     'module_timeline'
 );
@@ -27,7 +28,7 @@ if( function_exists('acf_add_local_field_group') ):
                     'id' => '',
                 ),
                 'layouts' => tpl_load_modules( $template_modules ),
-                'button_label' => __('Agregar bloque', BKT_MODULAR_THEME_LANG_DOMINE),
+                'button_label' => __('Agregar módulo', BKT_MODULAR_THEME_LANG_DOMINE),
                 'min' => '',
                 'max' => '',
             ),

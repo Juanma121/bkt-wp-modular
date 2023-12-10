@@ -19,7 +19,7 @@ function bkt_flex_module_banner_content () {
                                 if ($link['url']) :
                                     ?>
                                         <a target="<?php echo $link['target']; ?>" class="btn white-btn" href=<?php echo $link['url']; ?>>
-                                            <?php echo ( $link['title'] ) ? $link['title'] : __('Ver más', 'beticav2'); ?>
+                                            <?php echo ( $link['title'] ) ? $link['title'] : __('Ver más', BKT_MODULAR_THEME_LANG_DOMINE); ?>
                                         </a>
                                     <?php
                                 endif;
