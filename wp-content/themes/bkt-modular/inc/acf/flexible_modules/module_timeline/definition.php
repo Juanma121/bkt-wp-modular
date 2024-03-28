@@ -86,7 +86,7 @@ return array(
                     'sub_fields' => array(
                         array(
                             'key' => mod_acf_fieldkey( $module_name, 'type' ),
-                            'label' => __('Block type', 'beticav2'),
+                            'label' => __('Block type', BKT_MODULAR_THEME_LANG_DOMINE),
                             'name' => mod_acf_fieldname( $module_name, 'bgcolor' ),
                             'type' => 'select',
                             'instructions' => '',
