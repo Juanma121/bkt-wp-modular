@@ -10,5 +10,12 @@ $fa-font-path: '../fonts';
 @import 'base/color';
 @import 'base/font';
 @import 'base/mixins';
+@import 'base/common';
 @import 'base/texts';
 @import 'base/buttons';
+
+// Modules base
+@import 'modules/base/mod_hero';
+
+// Modules custom
+@import 'modules/custom/mod_hero';

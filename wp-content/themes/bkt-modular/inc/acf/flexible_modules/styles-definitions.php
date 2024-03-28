@@ -1,23 +1,25 @@
 <?php
 
 function styles_options($module_name, $allowed = array()) {
-    $styles = array(
-            'key' => mod_acf_fieldkey( $module_name, 'styles' ),
-            'label' => __('Estilos', BKT_MODULAR_THEME_LANG_DOMINE),
-            'name' => '',
-            'aria-label' => '',
-            'type' => 'tab',
-            'instructions' => '',
-            'required' => 0,
-            'conditional_logic' => 0,
-            'wrapper' => array(
-                'width' => '',
-                'class' => '',
-                'id' => '',
-            ),
-            'placement' => 'left',
-            'endpoint' => 0,
+    $styles = array();
+    $tab = array(
+        'key' => mod_acf_fieldkey( $module_name, 'styles' ),
+        'label' => __('Estilos', BKT_MODULAR_THEME_LANG_DOMINE),
+        'name' => '',
+        'aria-label' => '',
+        'type' => 'tab',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+            'width' => '',
+            'class' => '',
+            'id' => '',
+        ),
+        'placement' => 'left',
+        'endpoint' => 0,
     );
+    $styles = array($styles, $tab);
 
     $container = array(
         'key' => mod_acf_fieldkey( $module_name, 'container_type' ),
