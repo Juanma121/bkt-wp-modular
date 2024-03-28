@@ -1,7 +1,9 @@
 <?php
 
 $template_modules = array (
+    'module_hero',
     'module_text',
+    'module_text_image',
     'module_banner',
     'module_timeline'
 );
