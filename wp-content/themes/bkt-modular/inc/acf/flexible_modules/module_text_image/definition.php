@@ -71,7 +71,7 @@ return array(
                     'label' => __('Text', BKT_MODULAR_THEME_LANG_DOMINE),
                     'type' => 'wysiwyg',
                     'instructions' => '',
-                    'required' => 0,
+                    'required' => 1,
                     'conditional_logic' => 0,
                     'wrapper' => array(
                         'width' => '',

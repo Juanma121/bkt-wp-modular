@@ -16,13 +16,19 @@ function bkt_flex_module_text_image_content () {
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <?php if ($blocks_alignment == 'left'): ?>
-                            <?php if($title) : ?>
-                                <h2><?php echo $title; ?></h2>
+                            <?php if($title || $subtitle) : ?>
+                                <header class="header">
+                                    <?php if($title) : ?>
+                                        <h2><?php echo $title; ?></h2>
+                                    <?php endif; ?>
+                                    <?php if($subtitle) : ?>
+                                        <h3><?php echo $subtitle; ?></h3>
+                                    <?php endif; ?>
+                                </header>
                             <?php endif; ?>
-                            <?php if($subtitle) : ?>
-                                <h3><?php echo $subtitle; ?></h3>
-                            <?php endif; ?>
-                            <?php echo $text; ?>
+                            <div class="content">
+                                <?php echo $text; ?>
+                            </div>
                         <?php else : ?>
                             <div class="img-wrapper"><?php echo wp_get_attachment_image( $image, 'large' ); ?></div>
                         <?php endif; ?>
@@ -31,13 +37,19 @@ function bkt_flex_module_text_image_content () {
                         <?php if ($blocks_alignment == 'left'): ?>
                             <div class="img-wrapper"><?php echo wp_get_attachment_image( $image, 'large' ); ?></div>
                         <?php else : ?>
-                            <?php if($title) : ?>
-                                <h2><?php echo $title; ?></h2>
+                            <?php if($title || $subtitle) : ?>
+                                <header class="header">
+                                    <?php if($title) : ?>
+                                        <h2><?php echo $title; ?></h2>
+                                    <?php endif; ?>
+                                    <?php if($subtitle) : ?>
+                                        <h3><?php echo $subtitle; ?></h3>
+                                    <?php endif; ?>
+                                </header>
                             <?php endif; ?>
-                            <?php if($subtitle) : ?>
-                                <h3><?php echo $subtitle; ?></h3>
-                            <?php endif; ?>
-                            <?php echo $text; ?>
+                            <div class="content">
+                                <?php echo $text; ?>
+                            </div>
                         <?php endif; ?>
                     </div>
                 </div>
