@@ -8,7 +8,7 @@ function bkt_flex_module_faqs_content () {
     $text         = get_sub_field($module_name.'_text');
     $faqs         = get_sub_field($module_name.'_faqs');
     ?>
-        <section class="mod-faqs">
+        <section class="mod-faqs mod-flexible">
             <div class="container">
                 <?php if($title || $subtitle || $text) : ?>
                     <header class="header">

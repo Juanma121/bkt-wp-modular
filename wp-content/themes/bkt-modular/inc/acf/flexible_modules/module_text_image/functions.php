@@ -11,7 +11,7 @@ function bkt_flex_module_text_image_content () {
     $aligment = get_sub_field($module_name.'_aligment');
     $blocks_alignment = get_sub_field($module_name.'_blocks_alignment');
     ?>
-        <section class="mod-text-image <?php echo 'bg-'. $bg_color; ?> <?php echo 'c-'. $color; ?>">
+        <section class="mod-text-image mod-flexible <?php echo 'bg-'. $bg_color; ?> <?php echo 'c-'. $color; ?>">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">

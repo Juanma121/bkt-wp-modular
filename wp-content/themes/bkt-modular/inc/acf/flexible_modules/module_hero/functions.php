@@ -4,7 +4,7 @@ function bkt_flex_module_hero_content () {
     $module_name    = basename( __DIR__ );
     $mode           = get_sub_field($module_name.'_mode');
     ?>
-        <section class="mod-hero">
+        <section class="mod-hero mod-flexible">
             <?php ($mode == 'simple') ? render_hero_simple($module_name) : render_hero_slider($module_name); ?>
         </section>
     <?php
