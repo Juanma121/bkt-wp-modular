@@ -41,8 +41,8 @@ return array(
                         'id' => '',
                     ),
                     'choices' => array(
-                        'simple' => 'Simple',
-                        'slider' => 'Slider',
+                        'simple' => __('Simple', BKT_MODULAR_THEME_LANG_DOMINE),
+                        'slider' => __('Slider', BKT_MODULAR_THEME_LANG_DOMINE),
                     ),
                     'default_value' => 'simple',
                     'return_format' => 'value',

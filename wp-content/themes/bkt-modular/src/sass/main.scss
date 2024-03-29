@@ -15,7 +15,15 @@ $fa-font-path: '../fonts';
 @import 'base/buttons';
 
 // Modules base
+@import 'modules/base/mod_banner';
+@import 'modules/base/mod_faqs';
 @import 'modules/base/mod_hero';
+@import 'modules/base/mod_text';
+@import 'modules/base/mod_text_image';
 
 // Modules custom
+@import 'modules/custom/mod_banner';
+@import 'modules/custom/mod_faqs';
 @import 'modules/custom/mod_hero';
+@import 'modules/custom/mod_text';
+@import 'modules/custom/mod_text_image';

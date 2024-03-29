@@ -11,13 +11,19 @@ function bkt_flex_module_text_content () {
     ?>
         <section class="mod-text <?php echo 'bg-'. $bg_color; ?> <?php echo 'c-'. $color; ?>">
             <div class="container">
-                <?php if($title) : ?>
-                    <h2><?php echo $title; ?></h2>
+                <?php if($title || $subtitle) : ?>
+                    <header class="header">
+                        <?php if($title) : ?>
+                            <h2><?php echo $title; ?></h2>
+                        <?php endif; ?>
+                        <?php if($subtitle) : ?>
+                            <h3><?php echo $subtitle; ?></h3>
+                        <?php endif; ?>
+                    </header>
                 <?php endif; ?>
-                <?php if($subtitle) : ?>
-                    <h3><?php echo $subtitle; ?></h3>
-                <?php endif; ?>
-                <?php echo $text; ?>
+                <div class="content">
+                    <?php echo $text; ?>
+                </div>
             </div>
         </section>
     <?php
