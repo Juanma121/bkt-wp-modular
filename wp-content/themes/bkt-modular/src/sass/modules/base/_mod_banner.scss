@@ -1,0 +1,29 @@
+%mod-banner {
+  color: $white;
+  position: relative;
+
+  .image-wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+      background-color: $black-03;
+      bottom: 0;
+      content: '';
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .text-wrapper {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+}
