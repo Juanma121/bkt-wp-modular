@@ -5,6 +5,7 @@ $template_modules = array (
     'module_text',
     'module_text_image',
     'module_banner',
+    'module_distributor',
     'module_faqs',
     'module_timeline'
 );
