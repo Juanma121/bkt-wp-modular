@@ -19,7 +19,7 @@ function styles_options($module_name, $allowed = array()) {
         'placement' => 'left',
         'endpoint' => 0,
     );
-    $styles = array($styles, $tab);
+    array_push($styles, $tab);
 
     $container = array(
         'key' => mod_acf_fieldkey( $module_name, 'container_type' ),
@@ -50,7 +50,7 @@ function styles_options($module_name, $allowed = array()) {
         'placeholder' => '',
     );
     if (in_array( 'container', $allowed))
-        $styles = array($styles, $container);
+        array_push($styles, $container);
 
     $padding_top = array(
         'key' => mod_acf_fieldkey( $module_name, 'padding_top' ),
@@ -182,7 +182,6 @@ function styles_options($module_name, $allowed = array()) {
     );
     if (in_array( 'aligment', $allowed))
         array_push($styles, $aligment);
-
 
     return $styles;
 };
