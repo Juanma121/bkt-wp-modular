@@ -9,7 +9,7 @@ function bkt_flex_module_text_content () {
     $bg_color = get_sub_field($module_name.'_bgcolor');
     $aligment = get_sub_field($module_name.'_aligment');
     ?>
-        <section class="mod-text <?php echo 'bg-'. $bg_color; ?> <?php echo 'c-'. $color; ?>">
+        <section class="mod-text mod-flexible <?php echo 'bg-'. $bg_color; ?> <?php echo 'c-'. $color; ?>">
             <div class="container">
                 <?php if($title || $subtitle) : ?>
                     <header class="header">

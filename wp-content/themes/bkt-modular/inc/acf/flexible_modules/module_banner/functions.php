@@ -10,7 +10,7 @@ function bkt_flex_module_banner_content () {
     $btn_type = get_sub_field($module_name.'_btn_type');
     $bg_color = get_sub_field($module_name.'_bgcolor');
     ?>
-        <section class="mod-banner <?php echo $bg_color; ?>">
+        <section class="mod-banner mod-flexible <?php echo $bg_color; ?>">
             <div class="content">
                 <div class="image-wrapper" style="background-image: url('<?php echo $bg_image;?>');">
                     <div class="container text-wrapper">

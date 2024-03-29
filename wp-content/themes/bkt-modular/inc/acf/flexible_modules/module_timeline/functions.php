@@ -6,7 +6,7 @@ function bkt_flex_module_timeline_content () {
     $subtitle = get_sub_field($module_name.'_subtitle');
     $blocks = get_sub_field($module_name.'_time_blocks');
     ?>
-        <section class="mod-timeline">
+        <section class="mod-timeline mod-flexible">
             <div class="container">
                 <div class="mod-content row no-gutters align-items-center">
                     <div class="col-md-6">
