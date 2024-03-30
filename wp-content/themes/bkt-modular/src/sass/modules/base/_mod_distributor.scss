@@ -1,0 +1,18 @@
+%mod-distributor {
+  .items {
+    .item {
+      .item-image {
+        .bg-image {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 22.4rem;
+        }
+      }
+    }
+  }
+
+  .show-more {
+    text-align: center;
+  }
+}

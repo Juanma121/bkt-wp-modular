@@ -24,7 +24,7 @@ function bkt_flex_module_banner_content () {
                             <div class="text"><?php echo $text; ?></div>
                         <?php endif; ?>
                         <?php
-                            if ($link['url']) :
+                            if (is_array($link) && $link['url']) :
                                 ?>
                                     <a target="<?php echo $link['target']; ?>" class="<?php echo $btn_type; ?>" href=<?php echo $link['url']; ?>>
                                         <?php echo ( $link['title'] ) ? $link['title'] : __('Ver más', BKT_MODULAR_THEME_LANG_DOMINE); ?>
