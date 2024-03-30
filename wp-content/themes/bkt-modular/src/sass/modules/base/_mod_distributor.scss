@@ -1,6 +1,10 @@
 %mod-distributor {
   .items {
     .item {
+      .link-block {
+        text-decoration: none;
+      }
+
       .item-image {
         .bg-image {
           background-position: center;
