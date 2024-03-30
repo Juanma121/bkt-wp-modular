@@ -7,6 +7,7 @@ $template_modules = array (
     'module_banner',
     'module_distributor',
     'module_faqs',
+    'module_video',
     'module_timeline'
 );
 
