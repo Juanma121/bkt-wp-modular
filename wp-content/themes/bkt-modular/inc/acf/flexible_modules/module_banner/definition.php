@@ -111,7 +111,7 @@ return array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'btn_link' ),
                     'name' => mod_acf_fieldname( $module_name, 'btn_link' ),
-                    'label' => __('Enlace', BKT_MODULAR_THEME_LANG_DOMINE),
+                    'label' => __('Link', BKT_MODULAR_THEME_LANG_DOMINE),
                     'type' => 'link',
                     'instructions' => '',
                     'required' => 0,
