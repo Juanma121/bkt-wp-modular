@@ -1,0 +1,31 @@
+%mod-separator {
+  &.desktop-narrow-separation {
+    height: 60px;
+  }
+
+  &.desktop-normal-separation {
+    height: 90px;
+  }
+
+  &.desktop-wide-separation {
+    height: 120px;
+  }
+
+  &.mobile-narrow-separation {
+    @include media-breakpoint-down(sm) {
+      height: 40px;
+    }
+  }
+
+  &.mobile-normal-separation {
+    @include media-breakpoint-down(sm) {
+      height: 60px;
+    }
+  }
+
+  &.mobile-wide-separation {
+    @include media-breakpoint-down(sm) {
+      height: 90px;
+    }
+  }
+}

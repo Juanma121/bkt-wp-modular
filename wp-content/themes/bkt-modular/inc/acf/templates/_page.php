@@ -9,6 +9,7 @@ $template_modules = array (
     'module_faqs',
     'module_video',
     'module_script',
+    'module_separator',
     'module_timeline'
 );
 
