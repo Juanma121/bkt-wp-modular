@@ -29,7 +29,6 @@ function bkt_flex_module_video_content () {
 function render_video_youtube($module_name) {
     $url = get_sub_field($module_name.'_url');
     $preview = get_sub_field($module_name.'_preview_image');
-    error_log(var_export($url,true));
     ?>
         <div class="video-wrapper video-wrapper-iframe">
             <div class="bg-image" style="background-image: url(<?php echo $preview; ?>)"></div>

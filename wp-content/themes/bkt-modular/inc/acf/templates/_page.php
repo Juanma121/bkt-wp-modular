@@ -8,6 +8,7 @@ $template_modules = array (
     'module_distributor',
     'module_faqs',
     'module_video',
+    'module_script',
     'module_timeline'
 );
 
