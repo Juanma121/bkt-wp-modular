@@ -10,3 +10,27 @@ $fa-font-path: '../fonts';
 @import 'base/color';
 @import 'base/font';
 @import 'base/mixins';
+@import 'base/common';
+@import 'base/texts';
+@import 'base/buttons';
+
+// Modules base
+@import 'modules/base/common';
+@import 'modules/base/mod_banner';
+@import 'modules/base/mod_distributor';
+@import 'modules/base/mod_faqs';
+@import 'modules/base/mod_hero';
+@import 'modules/base/mod_separator';
+@import 'modules/base/mod_text';
+@import 'modules/base/mod_text_image';
+@import 'modules/base/mod_video';
+
+// Modules custom
+@import 'modules/custom/mod_banner';
+@import 'modules/custom/mod_distributor';
+@import 'modules/custom/mod_faqs';
+@import 'modules/custom/mod_hero';
+@import 'modules/custom/mod_separator';
+@import 'modules/custom/mod_text';
+@import 'modules/custom/mod_text_image';
+@import 'modules/custom/mod_video';

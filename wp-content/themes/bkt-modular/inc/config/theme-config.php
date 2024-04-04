@@ -3,6 +3,7 @@
 $required_files = [
     'enqueue',
     'support',
+    'filters',
 ];
 
 foreach( $required_files as $required_file) {

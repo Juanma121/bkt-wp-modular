@@ -32,6 +32,33 @@ get_header();
         </div>
     </div>
 </div>
+<br><br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="components-test">
+                Test de componentes
+            </h2>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Botón primario</h3>
+                    <a href="#" class="btn-primary">Primary Button</a>
+                    <h2>Botón secundario</h3>
+                    <a href="#" class="btn-secondary">Secondary Button</a>
+                    <h2>Botón enlace</h3>
+                    <a href="#" class="btn-link">Link Button</a>
+                </div>
+                <div class="col-6">
+                    <h2>Botón primario redondeado</h3>
+                    <a href="#" class="btn-primary btn-rounded">Primary Button</a>
+                    <h2>Botón secundario redondeado</h3>
+                    <a href="#" class="btn-secondary btn-rounded">Secondary Button</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php
 get_footer();
