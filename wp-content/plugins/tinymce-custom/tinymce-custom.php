@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Tinymce Editor Custom Buttons
-Description: Add nuew custom buttons to TinyMCE Toolbar
+Description: Add new custom buttons to TinyMCE Toolbar
 Author: Juan Mayor
 */
 
