@@ -5,8 +5,11 @@ function bkt_flex_module_video_content () {
     $title      = get_sub_field($module_name.'_title');
     $subtitle   = get_sub_field($module_name.'_subtitle');
     $source     = get_sub_field($module_name.'_source');
+    $alignment = get_sub_field($module_name.'_alignment');
+    $padding_bottom = get_sub_field($module_name.'_padding_bottom');
+    $padding_top = get_sub_field($module_name.'_padding_top');
     ?>
-        <section class="mod-video mod-flexible">
+        <section class="mod-video mod-flexible mod-alignment-<?php echo $alignment; ?> mod-padding-top-<?php echo $padding_top; ?> mod-padding-bottom-<?php echo $padding_bottom; ?>">
             <div class="container">
                 <?php if($title || $subtitle) : ?>
                     <header class="header">

@@ -4,9 +4,8 @@ function styles_options($module_name, $allowed = array()) {
     $styles = array();
     $tab = array(
         'key' => mod_acf_fieldkey( $module_name, 'styles' ),
-        'label' => __('Estilos', BKT_MODULAR_THEME_LANG_DOMINE),
-        'name' => '',
-        'aria-label' => '',
+        'label' => __('Styles', BKT_MODULAR_THEME_LANG_DOMINE),
+        'name' => __('Styles', BKT_MODULAR_THEME_LANG_DOMINE),
         'type' => 'tab',
         'instructions' => '',
         'required' => 0,
@@ -23,7 +22,7 @@ function styles_options($module_name, $allowed = array()) {
 
     $container = array(
         'key' => mod_acf_fieldkey( $module_name, 'container_type' ),
-        'label' => __('Tipo de contendor', BKT_MODULAR_THEME_LANG_DOMINE),
+        'label' => __('Container width', BKT_MODULAR_THEME_LANG_DOMINE),
         'name' => mod_acf_fieldname( $module_name, 'container_type' ),
         'type' => 'select',
         'instructions' => '',
@@ -35,9 +34,9 @@ function styles_options($module_name, $allowed = array()) {
             'id' => '',
         ),
         'choices' => array(
-            'wide' => __('Ancho', BKT_MODULAR_THEME_LANG_DOMINE),
+            'wide' => __('Narrow', BKT_MODULAR_THEME_LANG_DOMINE),
             'normal' => __('Normal', BKT_MODULAR_THEME_LANG_DOMINE),
-            'narrow' => __('Estrecho', BKT_MODULAR_THEME_LANG_DOMINE),
+            'narrow' => __('Wide', BKT_MODULAR_THEME_LANG_DOMINE),
         ),
         'default_value' => array(
             0 => 'normal',
@@ -54,7 +53,7 @@ function styles_options($module_name, $allowed = array()) {
 
     $padding_top = array(
         'key' => mod_acf_fieldkey( $module_name, 'padding_top' ),
-        'label' => __('Separación superior', BKT_MODULAR_THEME_LANG_DOMINE),
+        'label' => __('Padding top', BKT_MODULAR_THEME_LANG_DOMINE),
         'name' => mod_acf_fieldname( $module_name, 'padding_top' ),
         'type' => 'select',
         'instructions' => '',
@@ -67,7 +66,9 @@ function styles_options($module_name, $allowed = array()) {
         ),
         'choices' => array(
             'normal' => __('Normal', BKT_MODULAR_THEME_LANG_DOMINE),
-            'narrow' => __('Estrecho', BKT_MODULAR_THEME_LANG_DOMINE),
+            'narrow' => __('Narrow', BKT_MODULAR_THEME_LANG_DOMINE),
+            'wide'   => __('Wide', BKT_MODULAR_THEME_LANG_DOMINE),
+            'none'   => __('None', BKT_MODULAR_THEME_LANG_DOMINE)
         ),
         'default_value' => array(
             0 => 'normal',
@@ -84,7 +85,7 @@ function styles_options($module_name, $allowed = array()) {
 
     $padding_bottom = array(
         'key' => mod_acf_fieldkey( $module_name, 'padding_bottom' ),
-        'label' => __('Separación inferior', BKT_MODULAR_THEME_LANG_DOMINE),
+        'label' => __('Padding bottom', BKT_MODULAR_THEME_LANG_DOMINE),
         'name' => mod_acf_fieldname( $module_name, 'padding_bottom' ),
         'type' => 'select',
         'instructions' => '',
@@ -97,7 +98,9 @@ function styles_options($module_name, $allowed = array()) {
         ),
         'choices' => array(
             'normal' => __('Normal', BKT_MODULAR_THEME_LANG_DOMINE),
-            'narrow' => __('Estrecho', BKT_MODULAR_THEME_LANG_DOMINE),
+            'narrow' => __('Narrow', BKT_MODULAR_THEME_LANG_DOMINE),
+            'wide'   => __('Wide', BKT_MODULAR_THEME_LANG_DOMINE),
+            'none'   => __('None', BKT_MODULAR_THEME_LANG_DOMINE)
         ),
         'default_value' => array(
             0 => 'normal',
@@ -152,10 +155,10 @@ function styles_options($module_name, $allowed = array()) {
     if (in_array( 'color', $allowed))
         array_push($styles, $color);
 
-    $aligment = array(
-        'key' => mod_acf_fieldkey( $module_name, 'aligment' ),
-        'label' => __('Aligment', BKT_MODULAR_THEME_LANG_DOMINE),
-        'name' => mod_acf_fieldname( $module_name, 'aligment' ),
+    $alignment = array(
+        'key' => mod_acf_fieldkey( $module_name, 'alignment' ),
+        'label' => __('Alignment', BKT_MODULAR_THEME_LANG_DOMINE),
+        'name' => mod_acf_fieldname( $module_name, 'alignment' ),
         'type' => 'select',
         'instructions' => '',
         'required' => 0,
@@ -171,7 +174,7 @@ function styles_options($module_name, $allowed = array()) {
             'right' => __('Right', BKT_MODULAR_THEME_LANG_DOMINE),
         ),
         'default_value' => array(
-            0 => 'normal',
+            0 => 'left',
         ),
         'allow_null' => 0,
         'multiple' => 0,
@@ -180,8 +183,8 @@ function styles_options($module_name, $allowed = array()) {
         'return_format' => 'value',
         'placeholder' => '',
     );
-    if (in_array( 'aligment', $allowed))
-        array_push($styles, $aligment);
+    if (in_array( 'alignment', $allowed))
+        array_push($styles, $alignment);
 
     return $styles;
 };

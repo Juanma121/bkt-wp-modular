@@ -6,12 +6,12 @@ function bkt_flex_module_text_image_content () {
     $subtitle = get_sub_field($module_name.'_subtitle');
     $text = get_sub_field($module_name.'_text');
     $image = get_sub_field($module_name.'_image');
-    $color = get_sub_field($module_name.'_color');
-    $bg_color = get_sub_field($module_name.'_bgcolor');
-    $aligment = get_sub_field($module_name.'_aligment');
+    $alignment = get_sub_field($module_name.'_alignment');
+    $padding_bottom = get_sub_field($module_name.'_padding_bottom');
+    $padding_top = get_sub_field($module_name.'_padding_top');
     $blocks_alignment = get_sub_field($module_name.'_blocks_alignment');
     ?>
-        <section class="mod-text-image mod-flexible <?php echo 'bg-'. $bg_color; ?> <?php echo 'c-'. $color; ?>">
+        <section class="mod-text-image mod-flexible mod-alignment-<?php echo $alignment; ?> mod-padding-top-<?php echo $padding_top; ?> mod-padding-bottom-<?php echo $padding_bottom; ?>">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">

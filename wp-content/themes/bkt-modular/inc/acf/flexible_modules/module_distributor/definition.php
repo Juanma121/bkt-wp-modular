@@ -12,9 +12,8 @@ return array(
             array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'content' ),
+                    'name' => mod_acf_fieldname( $module_name, 'content' ),
                     'label' => __('Content', BKT_MODULAR_THEME_LANG_DOMINE),
-                    'name' => '',
-                    'aria-label' => '',
                     'type' => 'tab',
                     'instructions' => '',
                     'required' => 0,
@@ -30,7 +29,7 @@ return array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'title' ),
                     'name' => mod_acf_fieldname( $module_name, 'title' ),
-                    'label' => __('Títle', BKT_MODULAR_THEME_LANG_DOMINE),
+                    'label' => __('Title', BKT_MODULAR_THEME_LANG_DOMINE),
                     'type' => 'text',
                     'instructions' => '',
                     'required' => 0,
@@ -49,7 +48,7 @@ return array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'subtitle' ),
                     'name' => mod_acf_fieldname( $module_name, 'subtitle' ),
-                    'label' => __('Subtítle', BKT_MODULAR_THEME_LANG_DOMINE),
+                    'label' => __('Subtitle', BKT_MODULAR_THEME_LANG_DOMINE),
                     'type' => 'textarea',
                     'instructions' => '',
                     'required' => 0,
@@ -159,66 +158,6 @@ return array(
                     'prepend' => '',
                     'append' => '',
                 ),
-                // array(
-                //     'key' => mod_acf_fieldkey( $module_name, 'filter_taxonomy' ),
-                //     'name' => mod_acf_fieldname( $module_name, 'filter_taxonomy' ),
-                //     'label' => __('Filter by taxonomy', BKT_MODULAR_THEME_LANG_DOMINE),
-                //     'type' => 'true_false',
-                //     'instructions' => '',
-                //     'required' => 0,
-                //     'conditional_logic' => array(
-                //         array(
-                //             array(
-                //                 'field' => mod_acf_fieldkey( $module_name, 'mode' ),
-                //                 'operator' => '==',
-                //                 'value' => 'automatic',
-                //             ),
-                //         ),
-                //     ),
-                //     'wrapper' => array(
-                //         'width' => '25',
-                //         'class' => '',
-                //         'id' => '',
-                //     ),
-                //     'message' => '',
-                //     'default_value' => 0,
-                //     'ui' => 1,
-                //     'ui_on_text' => 'Yes',
-                //     'ui_off_text' => 'No',
-                // ),
-                // array(
-                //     'key' => mod_acf_fieldkey( $module_name, 'taxonomy' ),
-                //     'name' => mod_acf_fieldname( $module_name, 'taxonomy' ),
-                //     'label' => __('Taxonomies', BKT_MODULAR_THEME_LANG_DOMINE),
-                //     'type' => 'taxonomy',
-                //     'instructions' => '',
-                //     'required' => 0,
-                //     'conditional_logic' => array(
-                //         array(
-                //             array(
-                //                 'field' => mod_acf_fieldkey( $module_name, 'filter_taxonomy' ),
-                //                 'operator' => '==',
-                //                 'value' => 1,
-                //             ),
-                //         ),
-                //     ),
-                //     'wrapper' => array(
-                //         'width' => '25',
-                //         'class' => '',
-                //         'id' => '',
-                //     ),
-                //     'taxonomy' => 'category',
-                //     'add_term' => 0,
-                //     'save_terms' => 0,
-                //     'load_terms' => 0,
-                //     'return_format' => 'id',
-                //     'field_type' => 'multi_select',
-                //     'allow_null' => 0,
-                //     'bidirectional' => 0,
-                //     'multiple' => 0,
-                //     'bidirectional_target' => array(
-                //     ),
-                // ),
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'btn_link' ),
                     'name' => mod_acf_fieldname( $module_name, 'btn_link' ),
@@ -304,7 +243,13 @@ return array(
                     ),
                 ),
             ),
-            styles_options($module_name, array('container','top','bottom','bgcolor','color','aligment')),
+            styles_options(
+                $module_name, array(
+                    'alignment',
+                    'bottom',
+                    'top'
+                )
+            ),
         ),
         'min' => '',
         'max' => '',

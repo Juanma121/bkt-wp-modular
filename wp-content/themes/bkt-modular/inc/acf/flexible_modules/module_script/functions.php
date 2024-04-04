@@ -5,9 +5,11 @@ function bkt_flex_module_script_content () {
     $title = get_sub_field($module_name.'_title');
     $subtitle = get_sub_field($module_name.'_subtitle');
     $script = get_sub_field($module_name.'_script');
-    $aligment = get_sub_field($module_name.'_aligment');
+    $alignment = get_sub_field($module_name.'_alignment');
+    $padding_bottom = get_sub_field($module_name.'_padding_bottom');
+    $padding_top = get_sub_field($module_name.'_padding_top');
     ?>
-        <section class="mod-script mod-flexible">
+        <section class="mod-script mod-flexible mod-alignment-<?php echo $alignment; ?> mod-padding-top-<?php echo $padding_top; ?> mod-padding-bottom-<?php echo $padding_bottom; ?>">
             <div class="container">
                 <?php if($title || $subtitle) : ?>
                     <header class="header">

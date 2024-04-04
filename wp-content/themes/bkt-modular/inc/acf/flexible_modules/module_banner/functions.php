@@ -8,9 +8,11 @@ function bkt_flex_module_banner_content () {
     $text = get_sub_field($module_name.'_text');
     $link = get_sub_field($module_name.'_btn_link');
     $btn_type = get_sub_field($module_name.'_btn_type');
-    $bg_color = get_sub_field($module_name.'_bgcolor');
+    $alignment = get_sub_field($module_name.'_alignment');
+    $padding_bottom = get_sub_field($module_name.'_padding_bottom');
+    $padding_top = get_sub_field($module_name.'_padding_top');
     ?>
-        <section class="mod-banner mod-flexible <?php echo $bg_color; ?>">
+        <section class="mod-banner mod-flexible mod-alignment-<?php echo $alignment; ?> mod-padding-top-<?php echo $padding_top; ?> mod-padding-bottom-<?php echo $padding_bottom; ?>">
             <div class="content">
                 <div class="image-wrapper" style="background-image: url('<?php echo $bg_image;?>');">
                     <div class="container text-wrapper">

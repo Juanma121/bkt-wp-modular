@@ -10,6 +10,10 @@ function bkt_flex_module_distributor_content () {
     $max_items = get_sub_field($module_name.'_max_items');
     $btn_link = get_sub_field($module_name.'_btn_link');
     $btn_type = get_sub_field($module_name.'_btn_type');
+    $alignment = get_sub_field($module_name.'_alignment');
+    $padding_bottom = get_sub_field($module_name.'_padding_bottom');
+    $padding_top = get_sub_field($module_name.'_padding_top');
+
     $posts = array();
     if ($mode == 'manual') {
         $posts = get_sub_field($module_name.'_posts');
@@ -27,7 +31,7 @@ function bkt_flex_module_distributor_content () {
     $col_width = 12/$row_items;
 
     ?>
-        <section class="mod-distributor mod-flexible">
+        <section class="mod-distributor mod-flexible mod-alignment-<?php echo $alignment; ?> mod-padding-top-<?php echo $padding_top; ?> mod-padding-bottom-<?php echo $padding_bottom; ?>">
             <div class="container">
                 <?php if($title || $subtitle) : ?>
                     <header class="header">
