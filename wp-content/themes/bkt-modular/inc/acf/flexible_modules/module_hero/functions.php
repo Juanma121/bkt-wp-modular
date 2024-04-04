@@ -3,8 +3,10 @@
 function bkt_flex_module_hero_content () {
     $module_name    = basename( __DIR__ );
     $mode           = get_sub_field($module_name.'_mode');
+    $alignment = get_sub_field($module_name.'_alignment');
+    $padding_bottom = get_sub_field($module_name.'_padding_bottom');
     ?>
-        <section class="mod-hero mod-flexible">
+        <section class="mod-hero mod-flexible mod-alignment-<?php echo $alignment; ?> mod-padding-bottom-<?php echo $padding_bottom; ?>">
             <?php ($mode == 'simple') ? render_hero_simple($module_name) : render_hero_slider($module_name); ?>
         </section>
     <?php

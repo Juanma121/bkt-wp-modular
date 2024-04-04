@@ -85,7 +85,13 @@ return array(
                     'new_lines' => '',
                 ),
             ),
-            styles_options($module_name, array('container','top','bottom','aligment')),
+            styles_options(
+                $module_name, array(
+                    'aligment',
+                    'bottom',
+                    'top',
+                )
+            ),
         ),
         'min' => '',
         'max' => '',

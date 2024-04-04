@@ -7,8 +7,11 @@ function bkt_flex_module_faqs_content () {
     $subtitle     = get_sub_field($module_name.'_subtitle');
     $text         = get_sub_field($module_name.'_text');
     $faqs         = get_sub_field($module_name.'_faqs');
+    $alignment = get_sub_field($module_name.'_alignment');
+    $padding_bottom = get_sub_field($module_name.'_padding_bottom');
+    $padding_top = get_sub_field($module_name.'_padding_top');
     ?>
-        <section class="mod-faqs mod-flexible">
+        <section class="mod-faqs mod-flexible mod-alignment-<?php echo $alignment; ?> mod-padding-top-<?php echo $padding_top; ?> mod-padding-bottom-<?php echo $padding_bottom; ?>">
             <div class="container">
                 <?php if($title || $subtitle || $text) : ?>
                     <header class="header">

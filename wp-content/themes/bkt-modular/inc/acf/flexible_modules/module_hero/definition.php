@@ -12,8 +12,8 @@ return array(
             array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'content' ),
-                    'label' => __('Contenido', BKT_MODULAR_THEME_LANG_DOMINE),
-                    'name' => '',
+                    'name' => mod_acf_fieldname( $module_name, 'content' ),
+                    'label' => __('Content', BKT_MODULAR_THEME_LANG_DOMINE),
                     'aria-label' => '',
                     'type' => 'tab',
                     'instructions' => '',
@@ -55,7 +55,7 @@ return array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'background_image' ),
                     'name' => mod_acf_fieldname( $module_name, 'background_image' ),
-                    'label' => __('Background imagen', BKT_MODULAR_THEME_LANG_DOMINE),
+                    'label' => __('Background image', BKT_MODULAR_THEME_LANG_DOMINE),
                     'type' => 'image',
                     'instructions' => '',
                     'required' => 1,
@@ -87,7 +87,7 @@ return array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'title' ),
                     'name' => mod_acf_fieldname( $module_name, 'title' ),
-                    'label' => __('Título', BKT_MODULAR_THEME_LANG_DOMINE),
+                    'label' => __('Title', BKT_MODULAR_THEME_LANG_DOMINE),
                     'type' => 'text',
                     'instructions' => '',
                     'required' => 0,
@@ -114,7 +114,7 @@ return array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'subtitle' ),
                     'name' => mod_acf_fieldname( $module_name, 'subtitle' ),
-                    'label' => __('Subtítulo', BKT_MODULAR_THEME_LANG_DOMINE),
+                    'label' => __('Subtitle', BKT_MODULAR_THEME_LANG_DOMINE),
                     'type' => 'textarea',
                     'instructions' => '',
                     'required' => 0,
@@ -141,7 +141,7 @@ return array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'text' ),
                     'name' => mod_acf_fieldname( $module_name, 'text' ),
-                    'label' => __('Texto', BKT_MODULAR_THEME_LANG_DOMINE),
+                    'label' => __('Text', BKT_MODULAR_THEME_LANG_DOMINE),
                     'type' => 'wysiwyg',
                     'instructions' => '',
                     'required' => 0,
@@ -325,7 +325,7 @@ return array(
                             'key' => mod_acf_fieldkey( $module_name, 'slide_subtitle' ),
                             'label' => __('Slide subtitle', BKT_MODULAR_THEME_LANG_DOMINE),
                             'name' => 'slide_subtitle',
-                            'type' => 'text',
+                            'type' => 'textarea',
                             'instructions' => '',
                             'required' => 0,
                             'conditional_logic' => 0,
@@ -386,7 +386,12 @@ return array(
                     ),
                 ),
             ),
-            styles_options($module_name, array('bottom', 'aligment')),
+            styles_options(
+                $module_name, array(
+                    'aligment',
+                    'bottom'
+                )
+            ),
         ),
         'min' => '',
         'max' => '',

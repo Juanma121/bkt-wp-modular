@@ -12,9 +12,8 @@ return array(
             array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'content' ),
+                    'name' =>  mod_acf_fieldname( $module_name, 'content' ),
                     'label' => __('Content', BKT_MODULAR_THEME_LANG_DOMINE),
-                    'name' => '',
-                    'aria-label' => '',
                     'type' => 'tab',
                     'instructions' => '',
                     'required' => 0,
@@ -30,7 +29,7 @@ return array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'title' ),
                     'name' => mod_acf_fieldname( $module_name, 'title' ),
-                    'label' => __('Títle', BKT_MODULAR_THEME_LANG_DOMINE),
+                    'label' => __('Title', BKT_MODULAR_THEME_LANG_DOMINE),
                     'type' => 'text',
                     'instructions' => '',
                     'required' => 0,
@@ -49,7 +48,7 @@ return array(
                 array(
                     'key' => mod_acf_fieldkey( $module_name, 'subtitle' ),
                     'name' => mod_acf_fieldname( $module_name, 'subtitle' ),
-                    'label' => __('Subtítle', BKT_MODULAR_THEME_LANG_DOMINE),
+                    'label' => __('Subtitle', BKT_MODULAR_THEME_LANG_DOMINE),
                     'type' => 'textarea',
                     'instructions' => '',
                     'required' => 0,
@@ -85,7 +84,13 @@ return array(
                     'new_lines' => '',
                 ),
             ),
-            styles_options($module_name, array('container','top','bottom','bgcolor','color','aligment')),
+            styles_options(
+                $module_name, array(
+                    'alignment',
+                    'bottom',
+                    'top'
+                )
+            ),
         ),
         'min' => '',
         'max' => '',

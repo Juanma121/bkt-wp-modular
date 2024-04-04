@@ -5,11 +5,11 @@ function bkt_flex_module_text_content () {
     $title = get_sub_field($module_name.'_title');
     $subtitle = get_sub_field($module_name.'_subtitle');
     $text = get_sub_field($module_name.'_text');
-    $color = get_sub_field($module_name.'_color');
-    $bg_color = get_sub_field($module_name.'_bgcolor');
-    $aligment = get_sub_field($module_name.'_aligment');
+    $alignment = get_sub_field($module_name.'_alignment');
+    $padding_bottom = get_sub_field($module_name.'_padding_bottom');
+    $padding_top = get_sub_field($module_name.'_padding_top');
     ?>
-        <section class="mod-text mod-flexible <?php echo 'bg-'. $bg_color; ?> <?php echo 'c-'. $color; ?>">
+        <section class="mod-text mod-flexible mod-alignment-<?php echo $alignment; ?> mod-padding-top-<?php echo $padding_top; ?> mod-padding-bottom-<?php echo $padding_bottom; ?>">
             <div class="container">
                 <?php if($title || $subtitle) : ?>
                     <header class="header">
@@ -22,7 +22,7 @@ function bkt_flex_module_text_content () {
                     </header>
                 <?php endif; ?>
                 <div class="content">
-                    <?php echo $text; ?>
+                    <div class="text"><?php echo $text; ?></div>
                 </div>
             </div>
         </section>
