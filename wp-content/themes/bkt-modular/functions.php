@@ -6,6 +6,7 @@ $required_files = [
     'inc/helpers/loader.php',
     'inc/acf/functions.php',
     'inc/acf/init.php',
+    'inc/cpt/init.php',
 ];
 
 foreach($required_files as $required_file) {
