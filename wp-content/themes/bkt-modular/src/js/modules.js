@@ -10,9 +10,7 @@ jQuery(function($) {
             video_wrapper.on('click', function (e){
                 bg_image.remove();
                 play_icon.remove();
-                //as noted in addendum, check for querystring exitence
                 var symbol = video_player[0].src.indexOf("?") > -1 ? "&" : "?";
-                //modify source to autoplay and start video
                 video_player[0].src += symbol + "autoplay=1";
             });
         } else {
@@ -23,6 +21,5 @@ jQuery(function($) {
                 video_player.get(0).play();
             });
         }
-
     });
 });
