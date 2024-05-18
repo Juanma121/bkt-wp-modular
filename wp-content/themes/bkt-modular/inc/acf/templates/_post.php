@@ -4,13 +4,13 @@ $all_modules = get_flexible_modules_list();
 $template_modules = array();
 
 foreach ($all_modules as $module_key => $module_label) {
-    if (get_field('page_' . $module_key, 'option')) {
+    if (get_field('post_' . $module_key, 'option')) {
         $template_modules[] = $module_key;
     }
 }
 
 if (function_exists('acf_add_local_field_group')) :
-    $module_name = 'acf_page';
+    $module_name = 'acf_post';
     $group_key = "bkt_{$module_name}_" . md5($module_name);
 
     acf_add_local_field_group(array(
@@ -18,8 +18,8 @@ if (function_exists('acf_add_local_field_group')) :
         'title' => __('Módulos', BKT_MODULAR_THEME_LANG_DOMINE),
         'fields' => array(
             array(
-                'key' => mod_acf_fieldkey( $module_name, 'flexible_content' ),
-                'name' => mod_acf_fieldname( $module_name, 'flexible_content' ),
+                'key' => mod_acf_fieldkey($module_name, 'flexible_content'),
+                'name' => mod_acf_fieldname($module_name, 'flexible_content'),
                 'label' => '',
                 'type' => 'flexible_content',
                 'instructions' => '',
@@ -30,7 +30,7 @@ if (function_exists('acf_add_local_field_group')) :
                     'class' => '',
                     'id' => '',
                 ),
-                'layouts' => tpl_load_modules( $template_modules ),
+                'layouts' => tpl_load_modules($template_modules),
                 'button_label' => __('Agregar módulo', BKT_MODULAR_THEME_LANG_DOMINE),
                 'min' => '',
                 'max' => '',
@@ -41,7 +41,7 @@ if (function_exists('acf_add_local_field_group')) :
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'page',
+                    'value' => 'post',
                 ),
             ),
         ),
@@ -56,3 +56,4 @@ if (function_exists('acf_add_local_field_group')) :
     ));
 
 endif;
+
