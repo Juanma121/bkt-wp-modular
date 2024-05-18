@@ -168,7 +168,7 @@ return array(
             ),
             styles_options(
                 $module_name, array(
-                    'aligment',
+                    'alignment',
                     'bottom',
                     'top',
                 )
