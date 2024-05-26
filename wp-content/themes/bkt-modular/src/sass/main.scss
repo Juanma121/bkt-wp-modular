@@ -4,37 +4,38 @@ $fa-font-path: '../fonts';
 @import 'solid';
 @import 'brands';
 
-@import 'base/bootstrap-vars';
+@import 'core/base/bootstrap-vars';
 @import 'bootstrap';
 
-@import 'base/color';
-@import 'base/fonts';
-@import 'base/mixins';
-@import 'base/common';
-@import 'base/texts';
-@import 'base/buttons';
+@import 'core/base/color';
+@import 'core/base/fonts';
+@import 'core/base/mixins';
+@import 'core/base/common';
+@import 'core/base/texts';
+@import 'core/base/buttons';
 
-// Base custom
-@import 'base/custom/fonts';
+// Custom base
+@import 'custom/base/fonts';
+@import 'custom/base/buttons';
 
-// Modules base
-@import 'modules/base/common';
-@import 'modules/base/mod_banner';
-@import 'modules/base/mod_distributor';
-@import 'modules/base/mod_faqs';
-@import 'modules/base/mod_hero';
-@import 'modules/base/mod_separator';
-@import 'modules/base/mod_text';
-@import 'modules/base/mod_text_image';
-@import 'modules/base/mod_video';
+// Core modules
+@import 'core/modules/common';
+@import 'core/modules/mod_banner';
+@import 'core/modules/mod_distributor';
+@import 'core/modules/mod_faqs';
+@import 'core/modules/mod_hero';
+@import 'core/modules/mod_separator';
+@import 'core/modules/mod_text';
+@import 'core/modules/mod_text_image';
+@import 'core/modules/mod_video';
 
-// Modules custom
-@import 'modules/custom/common';
-@import 'modules/custom/mod_banner';
-@import 'modules/custom/mod_distributor';
-@import 'modules/custom/mod_faqs';
-@import 'modules/custom/mod_hero';
-@import 'modules/custom/mod_separator';
-@import 'modules/custom/mod_text';
-@import 'modules/custom/mod_text_image';
-@import 'modules/custom/mod_video';
+// Custom modules
+@import 'custom/modules/common';
+@import 'custom/modules/mod_banner';
+@import 'custom/modules/mod_distributor';
+@import 'custom/modules/mod_faqs';
+@import 'custom/modules/mod_hero';
+@import 'custom/modules/mod_separator';
+@import 'custom/modules/mod_text';
+@import 'custom/modules/mod_text_image';
+@import 'custom/modules/mod_video';
