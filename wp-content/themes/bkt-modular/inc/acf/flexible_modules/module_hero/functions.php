@@ -24,7 +24,7 @@ function render_hero_simple ($module_name) {
                 <div class="text-content">
                     <header>
                         <?php if($title): ?>
-                            <h1 class="title"><?php echo $title; ?></h1>
+                            <h2 class="title"><?php echo $title; ?></h2>
                         <?php endif; ?>
                         <?php if($subtitle): ?>
                             <div class="subtitle"><?php echo $subtitle; ?></div>
@@ -71,7 +71,7 @@ function render_hero_slider ($module_name) {
                                         <div class="text-content">
                                             <header>
                                                 <?php if($slide_title): ?>
-                                                    <h1 class="title"><?php echo $slide_title; ?></h1>
+                                                    <h2 class="title"><?php echo $slide_title; ?></h2>
                                                 <?php endif; ?>
                                                 <?php if($slide_subtitle): ?>
                                                     <div class="subtitle"><?php echo $slide_subtitle; ?></div>
