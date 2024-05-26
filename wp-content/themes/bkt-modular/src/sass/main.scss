@@ -14,6 +14,9 @@ $fa-font-path: '../fonts';
 @import 'base/texts';
 @import 'base/buttons';
 
+// Base custom
+@import 'base/custom/fonts';
+
 // Modules base
 @import 'modules/base/common';
 @import 'modules/base/mod_banner';
@@ -26,6 +29,7 @@ $fa-font-path: '../fonts';
 @import 'modules/base/mod_video';
 
 // Modules custom
+@import 'modules/custom/common';
 @import 'modules/custom/mod_banner';
 @import 'modules/custom/mod_distributor';
 @import 'modules/custom/mod_faqs';
