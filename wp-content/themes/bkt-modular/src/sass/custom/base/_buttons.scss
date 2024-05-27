@@ -29,4 +29,10 @@
 
 .btn-link {
   @extend %btn-link;
+
+  color: $theme-red;
+
+  &:hover {
+    color: $theme-red;
+  }
 }
