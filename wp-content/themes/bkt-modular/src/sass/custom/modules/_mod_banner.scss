@@ -1,3 +1,49 @@
 .mod-banner {
   @extend %mod-banner;
+
+  .content {
+    .text-wrapper {
+      padding-bottom: 7rem;
+      padding-top: 7rem;
+
+      .header {
+        margin-bottom: 2.5rem;
+
+        .title {
+          color: $white;
+        }
+      }
+
+      .text {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  .btn-primary {
+    &.active,
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .btn-secondary {
+    color: $white;
+  }
+
+  .btn-link {
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .content {
+      .text-wrapper {
+        width: 50%;
+      }
+    }
+  }
 }
