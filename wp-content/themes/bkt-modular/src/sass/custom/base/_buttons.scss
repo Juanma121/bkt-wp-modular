@@ -1,9 +1,30 @@
 .btn-primary {
   @extend %btn-solid;
+
+  background-color: $theme-red;
+  border-color: $theme-red;
+
+  &.active,
+  &:hover {
+    background-color: $transparent;
+    border-color: $theme-red;
+    color: $theme-red;
+  }
 }
 
 .btn-secondary {
   @extend %btn-border;
+
+  background-color: $transparent;
+  border-color: $theme-red;
+  color: $theme-red;
+
+  &.active,
+  &:hover {
+    background-color: $theme-red;
+    border-color: $theme-red;
+    color: $white;
+  }
 }
 
 .btn-link {
