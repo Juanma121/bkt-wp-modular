@@ -8,8 +8,20 @@ $theme-font-path: '../fonts';
     url('#{$theme-font-path}/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
     url('#{$theme-font-path}/Raleway-Regular.woff') format('woff'),
     url('#{$theme-font-path}/Raleway-Regular.ttf') format('truetype');
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$theme-font-path}/Raleway-Bold.eot');
+  src: local('Raleway-Regular'),
+    url('#{$theme-font-path}/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$theme-font-path}/Raleway-Bold.woff') format('woff'),
+    url('#{$theme-font-path}/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 $font-raleway: 'Raleway', sans-serif;
