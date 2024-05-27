@@ -9,14 +9,12 @@ $fa-font-path: '../fonts';
 
 @import 'core/base/color';
 @import 'core/base/fonts';
+@import 'custom/base/color';
+@import 'custom/base/fonts';
 @import 'core/base/mixins';
 @import 'core/base/common';
 @import 'core/base/texts';
 @import 'core/base/buttons';
-
-// Custom base
-@import 'custom/base/color';
-@import 'custom/base/fonts';
 @import 'custom/base/buttons';
 
 // Core modules
