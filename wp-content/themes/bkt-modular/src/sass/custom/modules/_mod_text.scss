@@ -1,3 +1,62 @@
 .mod-text {
   @extend %mod-text;
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  &.mod-alignment-center {
+    .title {
+      padding-bottom: 2rem;
+      position: relative;
+
+      &::after {
+        background: $theme-red;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 3px;
+        left: calc(50% - 25px);
+        position: absolute;
+        width: 50px;
+      }
+    }
+
+    .content {
+      text-align: left;
+    }
+  }
+}
+
+.mod-faqs + .mod-text {
+  @extend %mod-text;
+
+  .container {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+
+  .header {
+    color: $white;
+
+    .title {
+      color: $white;
+    }
+  }
+
+  .content {
+    color: $theme-text-with-background;
+  }
+
+  &::before {
+    background: $theme-background;
+    bottom: 60px;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    transform: skewY(-3deg);
+    z-index: -1;
+  }
 }
