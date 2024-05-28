@@ -22,7 +22,7 @@ function bkt_flex_module_banner_content () {
                                     <h2 class="title"><?php echo $title; ?></h2>
                                 <?php endif; ?>
                                 <?php if($subtitle) :?>
-                                    <h3 class="subtitle"><?php echo $subtitle; ?></h3>
+                                    <div class="subtitle"><?php echo $subtitle; ?></div>
                                 <?php endif; ?>
                             </header>
                         <?php endif; ?>
