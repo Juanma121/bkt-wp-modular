@@ -1,3 +1,17 @@
 .mod-text-image {
   @extend %mod-text-image;
+
+  .img-wrapper {
+    img {
+      border-radius: 1rem;
+    }
+  }
+
+  .header {
+    margin-bottom: 2.5rem;
+
+    .subtitle {
+      font-size: 1.8rem;
+    }
+  }
 }
