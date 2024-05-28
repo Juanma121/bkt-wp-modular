@@ -1,3 +1,102 @@
 .mod-distributor {
   @extend %mod-distributor;
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .items-posts {
+    >div {
+      margin-bottom: 2.5rem;
+    }
+
+    .item-post {
+      .link-block {
+        .item-image {
+          margin-bottom: 1rem;
+          overflow: hidden;
+          position: relative;
+
+          .image {
+            transition: .5s;
+          }
+        }
+
+        .item-content {
+          .item-categories {
+            display: inline-flex;
+            margin-bottom: 1rem;
+            word-break: keep-all;
+
+            .item-category {
+              color: $theme-red;
+              font-weight: bold;
+
+              &:not(:first-of-type) {
+                &::before {
+                  content: '·';
+                  margin-left: .5rem;
+                  margin-right: .5rem;
+                }
+              }
+            }
+          }
+        }
+
+        .item-title {
+          color: $theme-text;
+          font-size: 2rem;
+          font-weight: bold;
+          line-height: 2.8rem;
+          margin-bottom: 1rem;
+        }
+
+        .item-excerpt {
+          color: $theme-text;
+        }
+
+        .item-author {
+          text-transform: uppercase;
+        }
+
+        .item-author,
+        .item-date {
+          color: $theme-text-with-background;
+          font-size: 1.4rem;
+          margin-bottom: .5rem;
+        }
+
+        &:hover {
+          .item-image {
+            .image {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.mod-alignment-center {
+    .title {
+      padding-bottom: 2rem;
+      position: relative;
+
+      &::after {
+        background: $theme-red;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 3px;
+        left: calc(50% - 25px);
+        position: absolute;
+        width: 50px;
+      }
+    }
+
+    .content,
+    .items-posts {
+      text-align: left;
+    }
+  }
 }
