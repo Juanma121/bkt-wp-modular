@@ -11,8 +11,8 @@ function bkt_flex_module_timeline_content () {
                 <div class="mod-content row no-gutters align-items-center">
                     <div class="col-md-6">
                         <div class="container text-wrapper text-center">
-                            <h2 class="small-title text-center"><?php echo $title; ?></h2>
-                            <h3 class="big-title text-center"><?php echo $subtitle; ?></h3>
+                            <h2 class="title"><?php echo $title; ?></h2>
+                            <div class="subtitle"><?php echo $subtitle; ?></div>
                             <?php
                                 echo $blocks;
                                 if ((is_array($blocks)) && (count($blocks) > 0) ) :
