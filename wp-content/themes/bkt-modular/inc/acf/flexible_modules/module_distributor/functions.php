@@ -36,10 +36,10 @@ function bkt_flex_module_distributor_content () {
                 <?php if($title || $subtitle) : ?>
                     <header class="header">
                         <?php if($title) : ?>
-                            <h2><?php echo $title; ?></h2>
+                            <h2 class="title"><?php echo $title; ?></h2>
                         <?php endif; ?>
                         <?php if($subtitle) : ?>
-                            <h3><?php echo $subtitle; ?></h3>
+                            <div class="subtitle"><?php echo $subtitle; ?></div>
                         <?php endif; ?>
                     </header>
                 <?php endif; ?>
