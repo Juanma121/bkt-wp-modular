@@ -1,3 +1,29 @@
 .mod-script {
   @extend %mod-script;
+
+  header {
+    padding-bottom: 2rem;
+
+    .title {
+      font-size: 3.2rem;
+      position: relative;
+    }
+  }
+
+  &.mod-alignment-center {
+    .title {
+      padding-bottom: 2rem;
+
+      &::after {
+        background: $theme-red;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 3px;
+        left: calc(50% - 25px);
+        position: absolute;
+        width: 50px;
+      }
+    }
+  }
 }
