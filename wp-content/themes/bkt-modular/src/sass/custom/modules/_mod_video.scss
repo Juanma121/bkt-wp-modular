@@ -1,6 +1,30 @@
 .mod-video {
   @extend %mod-video;
 
+  .video-content {
+    border-radius: 1rem;
+
+    .video-wrapper {
+      border-radius: 1rem;
+
+      .bg-image {
+        border-radius: 1rem;
+
+        &::before {
+          border-radius: 1rem;
+        }
+      }
+
+      .video-player {
+        border-radius: 1rem;
+      }
+
+      iframe {
+        border-radius: 1rem;
+      }
+    }
+  }
+
   .header {
     margin-bottom: 2.5rem;
   }
