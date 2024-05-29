@@ -1,0 +1,11 @@
+.btn-primary {
+  @extend %btn-solid;
+}
+
+.btn-secondary {
+  @extend %btn-border;
+}
+
+.btn-link {
+  @extend %btn-link;
+}

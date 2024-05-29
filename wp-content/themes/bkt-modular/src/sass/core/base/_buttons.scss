@@ -127,7 +127,7 @@
   border-radius: 0;
   color: $black;
   padding-left: 0;
-  text-align: left;
+  padding-right: 0;
 
   &[disabled],
   &.disabled {
@@ -139,16 +139,4 @@
     cursor: pointer;
     text-decoration: underline;
   }
-}
-
-.btn-primary {
-  @extend %btn-solid;
-}
-
-.btn-secondary {
-  @extend %btn-border;
-}
-
-.btn-link {
-  @extend %btn-link;
 }

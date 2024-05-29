@@ -16,11 +16,15 @@ function bkt_flex_module_banner_content () {
             <div class="content">
                 <div class="image-wrapper" style="background-image: url('<?php echo $bg_image;?>');">
                     <div class="container text-wrapper">
-                        <?php if($title) :?>
-                            <h2 class="small-title"><?php echo $title; ?></h2>
-                        <?php endif; ?>
-                        <?php if($subtitle) :?>
-                            <h3 class="big-title"><?php echo $subtitle; ?></h3>
+                        <?php if($title || $subtitle) :?>
+                            <header class="header">
+                                <?php if($title) :?>
+                                    <h2 class="title"><?php echo $title; ?></h2>
+                                <?php endif; ?>
+                                <?php if($subtitle) :?>
+                                    <div class="subtitle"><?php echo $subtitle; ?></div>
+                                <?php endif; ?>
+                            </header>
                         <?php endif; ?>
                         <?php if($text): ?>
                             <div class="text"><?php echo $text; ?></div>
