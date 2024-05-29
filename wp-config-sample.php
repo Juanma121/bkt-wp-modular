@@ -83,7 +83,7 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+define( 'WP_DEFAULT_THEME', 'bkt-modular' );
 
 /* That's all, stop editing! Happy publishing. */
 
