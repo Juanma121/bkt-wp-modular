@@ -30,7 +30,8 @@ function create_new_post_type() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => null,
-        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        'menu_icon'          => 'dashicons-megaphone',
     );
 
     register_post_type( 'new', $args );
